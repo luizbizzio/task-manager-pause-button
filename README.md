@@ -40,19 +40,21 @@ processes continue to run normally.
 - Designed for the Windows 11 Task Manager using `Windows.UI.Xaml`.
 - Uses Task Manager's built-in **Ctrl-key refresh hold** behavior. It does not change the **Real time update speed** setting.
 - Ctrl-based actions inside Task Manager may behave differently while Pause is active.
-- Currently detects command bars with **English** or **Portuguese** button labels.
-- A Windows update may change the internal XAML interface and require a mod update.
+- Detects the tested command-bar layout without relying on the display language. It can also use English/Portuguese labels or control identifiers on other layouts. The **Pause/Resume** labels remain in English.
+- Uses Windhawk symbols for navigation between **Processes** and **Details**, including shared functions when present. A Windows update may change Task Manager internals or symbol availability and require a compatibility update.
+- If an icon cannot be created, the text-only **Pause/Resume** button remains usable.
 
 ## Troubleshooting
 
 If the button does not appear, confirm that the mod is enabled, close and
 reopen Task Manager, and check the **Processes** or **Details** page.
 
-If the issue continues, check the Windhawk log for XAML-related errors.
+If the issue continues, check the Windhawk mod log for symbol resolution,
+hook installation, or button insertion errors.
 You can [open a GitHub issue](https://github.com/luizbizzio/task-manager-pause-button/issues)
-with your Windows version, the steps to reproduce the problem, and relevant logs.
+with your Windows build, Task Manager version, steps to reproduce the problem,
+and relevant logs.
 
 ## Author and license
 
 **Luiz Bizzio**. Licensed under **Apache 2.0**; see [LICENSE](LICENSE).
-
