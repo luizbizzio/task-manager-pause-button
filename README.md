@@ -38,8 +38,6 @@ processes continue to run normally.
 ## Compatibility and limitations
 
 - Designed for the Windows 11 Task Manager using `Windows.UI.Xaml`.
-- Uses Task Manager's built-in **Ctrl-key refresh hold** behavior. It does not change the **Real time update speed** setting.
-- Ctrl-based actions inside Task Manager may behave differently while Pause is active.
 - Detects the tested command-bar layout without relying on the display language. It can also use English/Portuguese labels or control identifiers on other layouts. The **Pause/Resume** labels remain in English.
 - Uses Windhawk symbols for navigation between **Processes** and **Details**, including shared functions when present. A Windows update may change Task Manager internals or symbol availability and require a compatibility update.
 - If an icon cannot be created, the text-only **Pause/Resume** button remains usable.
